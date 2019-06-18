@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+plot_points = []
+
+plot_input = File.open('input.txt')
+plot_input.readlines.each do |plot|
+  plot_points << plot.gsub(/ /,'').chomp.split(',')
+end
+
+puts plot_points.to_s
